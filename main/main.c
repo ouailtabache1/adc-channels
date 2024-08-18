@@ -17,6 +17,7 @@ void app_main(void)
 		res=nvs_flash_init();
 	}
 	ESP_ERROR_CHECK(res);
+	//init the esp console
 	console_init();
 	configASSERT(ad_init());
 }
